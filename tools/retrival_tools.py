@@ -3,7 +3,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from loguru import logger
 from pinecone import Pinecone
 from fastmcp import FastMCP
-from configs.config_loader import settings
+
 
 class RetrievalTools:
     def __init__(self, mcp: FastMCP):
@@ -59,5 +59,6 @@ class RetrievalTools:
             logger.info(f"Registered tool: {name}")
         logger.info("="*40)
         
+
 
 
