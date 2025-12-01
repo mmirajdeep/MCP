@@ -16,7 +16,7 @@ class RetrievalTools:
             api_key="pcsk_3a1KGk_9VmJNrS3y3igZLgyExCSGpzE5Q2PV3uXWywMNkuDFJkrDgyj1C26ATi41jrF15w",
             ssl_verify=False,
         )
-        self.index = self.pinecone_client.Index(mcp-index")
+        self.index = self.pinecone_client.Index("mcp-index")
         self.namespace = "nepal_docs"
         self.index_name = "mcp-index"
         logger.info("Registering RetrievalTools methods...")
@@ -59,4 +59,5 @@ class RetrievalTools:
             logger.info(f"Registered tool: {name}")
         logger.info("="*40)
         
+
 
