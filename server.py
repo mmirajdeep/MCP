@@ -14,5 +14,4 @@ DBTools(mcp)
 
 
 if __name__ == "__main__":
-    asyncio.run(mcp.run_async())
-    # mcp.run(transport="http", host=settings.HOST, port=settings.PORT)
+    asyncio.run(mcp.run_async(transport="http", host=settings.HOST, port=settings.PORT))
