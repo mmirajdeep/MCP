@@ -1,6 +1,5 @@
 import asyncio
 from fastmcp import FastMCP
-from configs.config_loader import settings
 from tools.db_tools import DBTools
 from tools.math_tools import MathTools
 from tools.retrival_tools import RetrievalTools
