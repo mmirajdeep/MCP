@@ -145,7 +145,7 @@ class DBTools:
     
     async def delete_task(self, task_id, email=None):
         try:
-            if email != settings.VERFIFIED_EMAIL:
+            if email != "miraj@gmail.com":
                 return {"status": "error", "message": "Unauthorized: Invalid email address please provide verfified email"}
             
             async with aiosqlite.connect(DB_PATH) as c:
@@ -164,7 +164,7 @@ class DBTools:
         
     async def update_task(self, task_id, title=None, description=None, priority=None, status=None, email=None):
         try:
-            if email != settings.VERFIFIED_EMAIL:
+            if email != "miraj@gmail.com":
                 return {"status": "error", "message": "Unauthorized: Invalid email address please provide verfified email"}
             
             fields = []
@@ -240,5 +240,6 @@ class DBTools:
            todo_prompt_template,
            name="todo_prompt",
         )
+
 
 
