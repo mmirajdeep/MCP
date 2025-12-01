@@ -8,8 +8,13 @@ from configs.config_loader import settings
 import datetime
 from fastmcp.resources import FileResource
 
-resource_path = Path("resources/database_todo_instructions.md").resolve()
-prompt_path = Path("prompts/todo_database_prompt.txt").resolve()
+# resource_path = Path("resources/database_todo_instructions.md").resolve()
+# prompt_path = Path("prompts/todo_database_prompt.txt").resolve()
+
+BASE_DIR = Path(__file__).parent.parent  
+resource_path = BASE_DIR / "resources" / "database_todo_instructions.md"
+prompt_path = BASE_DIR / "prompts" / "todo_database_prompt.txt"
+
 TEMP_DIR = tempfile.gettempdir()
 DB_PATH = os.path.join(TEMP_DIR, "todo.db")
 
@@ -235,4 +240,5 @@ class DBTools:
            todo_prompt_template,
            name="todo_prompt",
         )
+
 
