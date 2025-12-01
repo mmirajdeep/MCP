@@ -4,7 +4,7 @@ from tools.db_tools import DBTools
 from tools.math_tools import MathTools
 from tools.retrival_tools import RetrievalTools
 
-mcp = FastMCP(name=settings.SERVER_NAME, version=settings.VERSION)
+mcp = FastMCP(name="myserver", version="1.0.0")
 
 # Instantiate class and register its tools
 MathTools(mcp)
