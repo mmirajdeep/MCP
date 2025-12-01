@@ -4,7 +4,6 @@ import os
 from loguru import logger
 import aiosqlite
 import tempfile
-from configs.config_loader import settings
 import datetime
 from fastmcp.resources import FileResource
 
@@ -240,6 +239,7 @@ class DBTools:
            todo_prompt_template,
            name="todo_prompt",
         )
+
 
 
 
